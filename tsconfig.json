@@ -1,0 +1,17 @@
+{
+    "compilerOptions": {
+      "module": "commonjs",               // Kiểu module sử dụng CommonJS
+      "esModuleInterop": true,            // Bật hỗ trợ cho import ES module
+      "target": "es6",                    // Phiên bản ECMAScript mục tiêu
+      "noImplicitAny": true,              // Báo lỗi nếu có biến không được chỉ định kiểu
+      "moduleResolution": "node",         // Cách giải quyết module theo kiểu Node.js
+      "sourceMap": true,                  // Tạo file sourcemap
+      "outDir": "dist",                   // Thư mục đầu ra cho các file biên dịch
+      "baseUrl": ".",                     // Đường dẫn cơ sở cho các import
+      "allowJs": true,                    // Cho phép biên dịch file JavaScript
+      "paths": {
+        "*": ["node_modules/*"]           // Đường dẫn cho các module
+      }
+    },
+    "include": ["src/**/*"]               // Bao gồm tất cả các file trong thư mục src
+  }
